@@ -6,6 +6,7 @@ from discord.ext.commands import Bot
 import asyncio
 import youtube_dl
 from datetime import datetime
+import os
 
 #bot
 TOKEN = process.env.TOKEN
@@ -229,4 +230,4 @@ async def deactivatesnipes(ctx):
     voice_client = bot.voice_client_in(server)
     await voice_client.disconnect()
 
-bot.run(TOKEN)
+bot.run(os.environ.get('token'))
