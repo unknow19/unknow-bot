@@ -228,4 +228,4 @@ async def deactivatesnipes(ctx):
     voice_client = bot.voice_client_in(server)
     await voice_client.disconnect()
 
-bot.run(os.getenv('TOKEN')
+bot.run(os.getenv('TOKEN'))
