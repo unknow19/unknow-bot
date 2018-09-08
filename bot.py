@@ -9,7 +9,6 @@ from datetime import datetime
 import os
 
 #bot
-TOKEN = process.env.TOKEN
 bot = commands.Bot(command_prefix="s-")
 
 #snipes
