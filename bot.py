@@ -8,7 +8,6 @@ import youtube_dl
 from datetime import datetime
 
 #bot
-TOKEN = "NDg0OTU1ODExNzgxNjcyOTkx.DmpiVw.BKqe-MWHq8N_cEEUBpjRR2_Ilxs"
 bot = commands.Bot(command_prefix="s-")
 
 #snipes
@@ -229,4 +228,4 @@ async def deactivatesnipes(ctx):
     voice_client = bot.voice_client_in(server)
     await voice_client.disconnect()
 
-bot.run(TOKEN)
+bot.run(os.getenv('TOKEN')
